@@ -21,7 +21,17 @@ import PantCollection from './components/pages/Pant.tsx';
 import StaticProfilePage from './components/Profile.tsx';
 import CartPage from './components/Cart.tsx';
 import ManageUsers from './components/pages/users/ManageUsers.tsx';
-import ManageRoles from './components/pages/roles/ManageRole.tsx';
+import ManageRoles from './components/pages/roles/ManageRoles.tsx';
+import DetailsUser from './components/pages/users/DetailsUser.tsx';
+import CreateUserForm from './components/pages/users/CreateUser.tsx';
+import EditUser from './components/pages/users/EditUser.tsx';
+//categories
+import ManageCategories from './components/pages/categories/ManageCategories.tsx';
+import ManageOrders from './components/pages/orders/ManageOrders.tsx';
+import ManageProducts from './components/pages/products/ManageProducts.tsx';
+import Reports from './components/pages/reports/Reports.tsx';
+import Settings from './components/pages/settings/Settings.tsx';
+
 
 
 
@@ -37,7 +47,16 @@ const AppRoute = createBrowserRouter([
       {path:'/profile', element: <StaticProfilePage/>},
       {path:'/cart', element: <CartPage/>},
       {path:'/users', element: <ManageUsers/>},
+      {path:'/users/details', element: <DetailsUser/>},
+      {path:'/users/create', element: <CreateUserForm/>},
+      {path:'/edit/user', element: <EditUser/>},
       {path:'/roles', element: <ManageRoles/>},
+      {path:'/categories', element: <ManageCategories/>},
+      {path:'/orders', element: <ManageOrders/>},
+      {path:'/products', element: <ManageProducts/>},
+      {path:'/reports', element: <Reports/>},
+      {path:'/settings', element: <Settings/>},
+      
       
     ]
   },

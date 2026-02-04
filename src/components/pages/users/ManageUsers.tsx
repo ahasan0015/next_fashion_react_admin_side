@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 interface User {
   id: number;
@@ -46,9 +47,9 @@ const ManageUsers = () => {
         <div className="card-header d-flex justify-content-between align-items-center">
           <h5 className="mb-0">Users Management</h5>
 
-          <button className="btn btn-primary">
+          <NavLink to='/users/create' className="btn btn-primary">
             + Add User
-          </button>
+          </NavLink>
         </div>
 
         <div className="card-body">
@@ -88,13 +89,13 @@ const ManageUsers = () => {
 
                   <td className="text-center">
 
-                    <button className="btn btn-secondary btn-sm me-2">
+                    <NavLink to='/users/details' className="btn btn-secondary btn-sm me-2">
                       View
-                    </button>
+                    </NavLink>
 
-                    <button className="btn btn-warning btn-sm me-2">
+                    <NavLink to='/edit/user' className="btn btn-warning btn-sm me-2">
                       Edit
-                    </button>
+                    </NavLink>
 
                     <button
                       onClick={() => handleDelete(user.id)}

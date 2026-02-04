@@ -1,0 +1,81 @@
+import { useNavigate } from "react-router-dom";
+
+const DetailsUser = () => {
+  const navigate = useNavigate();
+
+  // Static user (later you can load from API)
+  const user = {
+    id: 1,
+    name: "Admin User",
+    email: "admin@example.com",
+    role: "Admin",
+    status: "Active",
+    phone: "0123456789",
+    created_at: "2026-02-04",
+  };
+
+  return (
+    <div className="container mt-4">
+
+      <div className="card shadow">
+
+        <div className="card-header d-flex justify-content-between">
+          <h5>User Details</h5>
+
+          <button
+            onClick={() => navigate(-1)}
+            className="btn btn-secondary btn-sm"
+          >
+            Back
+          </button>
+        </div>
+
+        <div className="card-body">
+
+          <div className="row mb-3">
+            <div className="col-md-6">
+              <strong>ID:</strong> {user.id}
+            </div>
+
+            <div className="col-md-6">
+              <strong>Name:</strong> {user.name}
+            </div>
+          </div>
+
+          <div className="row mb-3">
+            <div className="col-md-6">
+              <strong>Email:</strong> {user.email}
+            </div>
+
+            <div className="col-md-6">
+              <strong>Phone:</strong> {user.phone}
+            </div>
+          </div>
+
+          <div className="row mb-3">
+            <div className="col-md-6">
+              <strong>Role:</strong> {user.role}
+            </div>
+
+            <div className="col-md-6">
+              <strong>Status:</strong>{" "}
+              <span className={`badge ${user.status === "Active" ? "bg-success" : "bg-danger"}`}>
+                {user.status}
+              </span>
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="col-md-6">
+              <strong>Created At:</strong> {user.created_at}
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  );
+};
+
+export default DetailsUser;

@@ -41,27 +41,27 @@ export default function Sidebar() {
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/admin/products" className="nav-link sidebar-link">
+          <NavLink to="/products" className="nav-link sidebar-link">
             🛍️ Products
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/admin/categories" className="nav-link sidebar-link">
+          <NavLink to="/categories" className="nav-link sidebar-link">
             📂 Categories
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/admin/orders" className="nav-link sidebar-link">
+          <NavLink to="/orders" className="nav-link sidebar-link">
             📦 Orders
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/admin/reports" className="nav-link sidebar-link">
+          <NavLink to="/reports" className="nav-link sidebar-link">
             📈 Reports
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/admin/settings" className="nav-link sidebar-link">
+          <NavLink to="/settings" className="nav-link sidebar-link">
             ⚙️ Settings
           </NavLink>
         </li>
