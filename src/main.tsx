@@ -57,9 +57,7 @@ const AppRoute = createBrowserRouter([
       {path:'/products', element: <ManageProducts/>},
       {path:'/reports', element: <Reports/>},
       {path:'/settings', element: <Settings/>},
-      {path:'/coupons', element: <ManageCoupons/>},
-      
-      
+      {path:'/coupons', element: <ManageCoupons/>}, 
     ]
   },
   {path:'/login', element:<Login />},
